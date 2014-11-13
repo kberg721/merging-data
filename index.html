@@ -40,7 +40,7 @@
 
             <section>
                 <ul class="cards">
-                    <li class="card" ng-repeat="employee in employees | filter : search | orderBy:order">
+                    <li class="card" ng-repeat="employee in employees | filter : search | orderBy : order">
                         <!-- this img should show the employee picture --> 
                         <img ng-src="{{employee.picUrl}}" alt="picture of " + {{employee.firstName}} + " " + {{employee.lastName}}>
                         <div class="details">
